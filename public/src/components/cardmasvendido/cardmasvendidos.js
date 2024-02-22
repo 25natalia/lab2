@@ -1,4 +1,4 @@
-class cardDestacado extends HTMLElement {
+class cardMasVendidos extends HTMLElement {
 	//crear constructor
 	constructor() {
 		super();
@@ -7,7 +7,7 @@ class cardDestacado extends HTMLElement {
 
 	//propiedades dinamicas
 	static get observedAttributes() {
-		return ['imagen', 'title', 'button', 'device'];
+		return ['imagen', 'title', 'fecha', 'oferta', 'precio', 'device', 'corazon'];
 	}
 	//conectar componente, lo que esta adentro de eso se conecta al dom
 	connectedCallback() {
@@ -16,11 +16,14 @@ class cardDestacado extends HTMLElement {
 
 	render() {
 		this.shadowRoot.innerHTML = `
-  <link rel ="stylesheet" href="./scr/components/cardDestacados/cardDestacados.css"
-  <img src='${this.imagen}'></img>
+  <link rel ="stylesheet" href="./scr/components/cardmasvendidos/cardmasvendidos.css"
+	<img src='${this.imagen}'></img>
 	<h3>${this.title || 'por defecto'}</h3>
-	<button>${this.button || 'por defecto'}</button>
-	<span>${this.device || 'por defecto'}</span>
+	<p>${this.fecha || 'por defecto'}</p>
+	<p>${this.oferta}</p>
+	<p>${this.precio}</p>
+	<p>${this.device}</p>
+	<svg>${this.corazon}</svg>
   `;
 	}
 
@@ -31,5 +34,5 @@ class cardDestacado extends HTMLElement {
 	}
 }
 
-customElements.define('card-destacado', cardDestacado);
-export default cardDestacado;
+customElements.define('banner-grande', cardMasVendidos);
+export default cardMasVendidos;
