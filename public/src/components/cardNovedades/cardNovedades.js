@@ -7,7 +7,7 @@ class cardNovedades extends HTMLElement {
 
 	//propiedades dinamicas
 	static get observedAttributes() {
-		return ['imagennovedades', 'fecha', 'subtitle', 'parrafo', 'leermas'];
+		return ['imagen', 'fecha', 'subtitle', 'parrafo', 'leermas'];
 	}
 	//conectar componente, lo que esta adentro de eso se conecta al dom
 	connectedCallback() {
@@ -16,12 +16,14 @@ class cardNovedades extends HTMLElement {
 
 	render() {
 		this.shadowRoot.innerHTML = `
-  <link rel ="stylesheet" href="./scr/components/cardNovedades/cardNovedades.css"
-	<img src='${this.imagennovedades}'></img>
-	<p>${this.fecha || 'por defecto'}</p>
-	<h3>${this.subtitle || 'por defecto'}</h3>
-	<p>${this.buttonbanner || 'por defecto'}</p>
-	<span>${this.leermas}</span>
+  <link rel ="stylesheet" href="./src/components/cardNovedades/cardNovedades.css"
+	<section id="card-novedades">
+	<img id="imagen" src='${this.imagen}'></img>
+	<p id="fecha">${this.fecha || 'por defecto'}</p>
+	<h3 id="subtitulo">${this.subtitle || 'por defecto'}</h3>
+	<p id="parrafo">${this.parrafo || 'por defecto'}</p>
+	<span id="leermas">${this.leermas}</span>
+	</section>
   `;
 	}
 

@@ -1,1 +1,36 @@
+#card-novedades {
+	height: 300px;
+	width: 300px;
+}
 
+#imagen {
+	height: 300px;
+	border-radius: 15px;
+}
+
+#subtitulo {
+	color: rgb(69, 69, 69);
+}
+
+#subtitulo:hover {
+	color: rgb(169, 13, 26);
+}
+
+#fecha {
+	color: rgb(69, 69, 69);
+}
+#leermas {
+	display: flex;
+	color: rgb(230, 0, 18);
+	font-weight: 700;
+	text-decoration: underline;
+	margin-bottom: 50px;
+}
+
+#leermas:hover {
+	color: rgb(169, 13, 26);
+}
+
+#parrafo {
+	color: rgba(69, 69, 69, 0.5);
+}

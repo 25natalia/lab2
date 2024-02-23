@@ -1,1 +1,45 @@
+#title {
+	color: rgb(69, 69, 69);
+}
 
+#imagen {
+	width: 150vh;
+	border-radius: 15px;
+	margin-bottom: 20px;
+}
+
+#centrar {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+}
+
+* {
+	text-wrap: wrap;
+}
+#title {
+	margin-top: 50px;
+	margin-bottom: 30px;
+	margin-left: 90px;
+	color: rgb(69, 69, 69);
+}
+
+#button {
+	background-color: rgb(230, 0, 18);
+	border-style: none;
+	border-radius: 10px;
+	color: white;
+	font-size: 1.2em;
+	font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+	text-align: center;
+	height: 5vh;
+	width: 17vh;
+	cursor: pointer;
+	margin-left: 20px;
+	margin-bottom: 50px;
+	margin-top: 40px;
+}
+#button:hover {
+	background-color: rgb(169, 13, 26);
+}

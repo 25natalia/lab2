@@ -16,11 +16,17 @@ class bannerGrande extends HTMLElement {
 
 	render() {
 		this.shadowRoot.innerHTML = `
-  <link rel ="stylesheet" href="./scr/components/bannerGrande/bannerGrande.css"
-	<h2>${this.titlebanner || 'por defecto'}</h2>
-  <img src='${this.imagenbanner}'></img>
-	<strong>${this.strong || 'por defecto'}</strong>
-	<button>${this.buttonbanner || 'por defecto'}</button>
+  <link rel ="stylesheet" href="./src/components/bannerGrande/bannerGrande.css"
+	<section id="banner-grande">
+	<h2 id="title">${this.titlebanner || 'por defecto'}</h2>
+	<section id="centrar">
+  <img id="imagen" src='${this.imagenbanner}'></img>
+	<section id="botones">
+	<strong id="subtitulo">${this.strong || 'por defecto'}</strong>
+	<button id="button">${this.buttonbanner || 'por defecto'}</button>
+	</section>
+	</section>
+	</section>
   `;
 	}
 

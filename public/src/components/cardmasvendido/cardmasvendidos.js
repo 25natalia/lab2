@@ -16,14 +16,16 @@ class cardMasVendidos extends HTMLElement {
 
 	render() {
 		this.shadowRoot.innerHTML = `
-  <link rel ="stylesheet" href="./scr/components/cardmasvendidos/cardmasvendidos.css"
-	<img src='${this.imagen}'></img>
-	<h3>${this.title || 'por defecto'}</h3>
-	<p>${this.fecha || 'por defecto'}</p>
-	<p>${this.oferta}</p>
-	<p>${this.precio}</p>
-	<p>${this.device}</p>
-	<svg>${this.corazon}</svg>
+  <link rel ="stylesheet" href="./src/components/cardmasvendido/cardmasvendidos.css"
+	<section id="card-mas-vendidos">
+	<img id="imagen" src='${this.imagen}'></img>
+	<h3 id="title">${this.title || 'por defecto'}</h3>
+	<p id="fecha">${this.fecha || 'por defecto'}</p>
+	<p id="oferta">${this.oferta}</p>
+	<p id="[precio]">${this.precio}</p>
+	<p id="device">${this.device}</p>
+	<svg id="corazon">${this.corazon}</svg>
+	</section>
   `;
 	}
 
@@ -34,5 +36,5 @@ class cardMasVendidos extends HTMLElement {
 	}
 }
 
-customElements.define('banner-grande', cardMasVendidos);
+customElements.define('card-mas-vendidos', cardMasVendidos);
 export default cardMasVendidos;

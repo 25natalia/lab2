@@ -16,11 +16,13 @@ class cardDestacado extends HTMLElement {
 
 	render() {
 		this.shadowRoot.innerHTML = `
-  <link rel ="stylesheet" href="./scr/components/cardDestacados/cardDestacados.css"
-  <img src='${this.imagen}'></img>
-	<h3>${this.title || 'por defecto'}</h3>
-	<button>${this.button || 'por defecto'}</button>
-	<span>${this.device || 'por defecto'}</span>
+  <link rel ="stylesheet" href="./src/components/cardDestacados/cardDestacados.css"
+	<section id="tarjeta">
+	<img id="imagen" src='${this.imagen}'></img>
+	<h3 id="title">${this.title || 'por defecto'}</h3>
+	<button id="button">${this.button || 'por defecto'}</button>
+	<span id="nintendo-switch">${this.device || 'por defecto'}</span>
+	</section>
   `;
 	}
 
